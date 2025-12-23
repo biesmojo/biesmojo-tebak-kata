@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pengecek Kata Rahasia</title>
+</head>
+<body>
+  <script>
+    // Kata rahasia
+    const kataRahasia = "kucing";
+
+    // Minta input dari pengguna
+    const tebakan = prompt("Tebak kata rahasia:");
+
+    // Validasi dan tampilkan hasil
+    if (tebakan && tebakan.trim().toLowerCase() === kataRahasia) {
+      console.log(`Selamat! Kamu menebak dengan benar. Kata rahasianya adalah '${kataRahasia}'.`);
+      alert(`Selamat! Kamu menebak dengan benar. Kata rahasianya adalah '${kataRahasia}'.`);
+    } else {
+      console.log(`Maaf, tebakanmu salah. Kata rahasianya adalah '${kataRahasia}'.`);
+      alert(`Maaf, tebakanmu salah. Kata rahasianya adalah '${kataRahasia}'.`);
+    }
+  </script>
+</body>
+</html>
